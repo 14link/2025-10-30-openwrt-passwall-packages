@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=naiveproxy
-PKG_VERSION:=149.0.7827.114
-PKG_RELEASE:=1
+PKG_VERSION:=154.0.8037.49
+PKG_RELEASE:=2
 
 ARCH_PREBUILT:=$(ARCH_PACKAGES)
 
@@ -25,7 +25,7 @@ PKG_SOURCE:=naiveproxy-v$(PKG_VERSION)-$(PKG_RELEASE)-openwrt-$(ARCH_PREBUILT).t
 PKG_SOURCE_URL:=https://github.com/klzgrad/naiveproxy/releases/download/v$(PKG_VERSION)-$(PKG_RELEASE)/
 
 ifeq ($(ARCH_PREBUILT),aarch64_cortex-a53)
-  PKG_HASH:=f47f3563547df291179faedce1cbaea79d3308d9b514ab45cd9a48ef91b16004
+  PKG_HASH:=48d383edb5da670de89d500d4b7380e17977942f80db167860d7194717be3951
 else ifeq ($(ARCH_PREBUILT),aarch64_cortex-a72)
   PKG_HASH:=720506fb399fad7721ebafa6d79c62afa5af6e2129963d34c4fe9eae5e21271e
 else ifeq ($(ARCH_PREBUILT),aarch64_generic)
@@ -41,7 +41,7 @@ else ifeq ($(ARCH_PREBUILT),arm_cortex-a5_vfpv4)
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7)
   PKG_HASH:=a1e7cab958cc4912d65d00fc56144102d88792886bc4d3fc77fad2306ecb2d38
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7_neon-vfpv4)
-  PKG_HASH:=24bda5d57d206f91341be3cc7da6ab57342f2232b7e725295b1f928bcecc51ac
+  PKG_HASH:=d432aa1c7ea9cc8782d62d7812a733f3ac966f04c022f92487d64ebc2c625fe7
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a7_vfpv4)
   PKG_HASH:=13e20e649a226fbb879c1d571caa18bc40bdf27d90a1391172754bcb14ac6b74
 else ifeq ($(ARCH_PREBUILT),arm_cortex-a8_vfpv3)
@@ -63,7 +63,7 @@ else ifeq ($(ARCH_PREBUILT),mipsel_mips32)
 else ifeq ($(ARCH_PREBUILT),riscv64)
   PKG_HASH:=f72aeda71c6da0b75ccf2a09f2a963e750aba9f18f7a849fd09bcbfa89514199
 else ifeq ($(ARCH_PREBUILT),x86)
-  PKG_HASH:=b3513fee31ec503a3835579d211f5d0aa70e2d46b17eda363d42841d7ea15552
+  PKG_HASH:=ae4e441cddf775c99ff1bd5b901c387f778e45a69774d826a797ba8f9abbbad8
 else ifeq ($(ARCH_PREBUILT),x86_64)
   PKG_HASH:=f1a1742f78f0b4b7fa36f8f4600598579b048da6c033c353633b396ec24c1bf2
 else
